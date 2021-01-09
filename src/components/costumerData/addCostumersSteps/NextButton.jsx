@@ -1,19 +1,3 @@
-import { Button, Icon } from 'semantic-ui-react';
-import React, { Component} from "react";
-
-export default class NextButton extends Component {
-
-    state = {
-        disabled: this.props.disabled ? this.props.disabled : true,
-        onclick: this.props.onClick ? this.props.onClick : ''
-    }
-
-    render = ()=> (
-        <Button disabled={this.state.disabled} basic size='medium' color='grey' animated='fade' onClick={this.state.onclick}>
-            <Button.Content visible>Continuar</Button.Content>
-            <Button.Content hidden>
-                <Icon name='arrow right' />
-            </Button.Content>
-        </Button>
-    );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d18de2bc92dc3148a8c951d0b3f8fe95f9b27032fa971ee6b506942c43f05816
+size 642

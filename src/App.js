@@ -1,32 +1,3 @@
-import './App.css';
-import React, {Component} from 'react';
-import { ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
-
-import Routes from "./components/Routes";
-
-import MainMenu from './components/MainMenu';
-
-//global.session = false;
-
-const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql',
-  cache: new InMemoryCache(),
-  defaultOptions: {
-    watchQuery: {
-      fetchPolicy: 'cache-and-network',
-    }
-  }
-});
-
-export  default class App extends Component{
-
-  render() {
-    return (
-      <ApolloProvider client={client}>
-        <Routes>
-          <MainMenu/>
-        </Routes>
-      </ApolloProvider>
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3cc4b8738fd54c020803e84739379c9aa3d41d9073ab61a43f938523aa873fc2
+size 656
